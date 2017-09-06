@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<UIBoxLayout
+	id="main"
+	width="expanding"
+	height="expanding"
+	direction="horizontal"
+	gravity="hcenter|vcenter">
+		<UIButton
+			id="btn_close"
+			width="expanding"
+			height="expanding"
+			margin="5,5,5,5"
+			text="Close"
+			skin="@skin/UIButton.xml"/>
+</UIBoxLayout>

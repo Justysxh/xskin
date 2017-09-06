@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<UIBoxLayout
+id="hbox"
+width="expanding"
+height="expanding"
+direction="horizontal"
+bkImage="#cdcdcd"
+padding="2,2,2,2"
+gravity="left|vcenter">
+	<UIImageView
+	width="50"
+	height="50"
+	src="@10.jpg"
+	tooltip="image"/>
+	<UIButton
+	id="btn"
+	width="expanding"
+	height="preferred"
+	text="Button"
+	bkNormalImage="#00FF00"
+	bkHotImage="#FFFF00"
+	/>
+</UIBoxLayout>

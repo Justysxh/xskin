@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+
+<skin
+	bkNormalImage="@image/radio_bk.png source(0,0,17,17)"
+	bkHotImage="@image/radio_bk.png source(17,0,34,17)"
+	bkPushedImage="@image/radio_bk.png source(34,0,51,17)"
+	bkDisabledImage="@image/radio_bk.png source(51,0,68,17)"
+	bkCheckedNormalImage="@image/radio_check.png source(0,0,17,17)"
+	bkCheckedHotImage="@image/radio_check.png source(17,0,34,17)"
+	bkCheckedPushedImage="@image/radio_check.png source(34,0,51,17)"
+	bkCheckedDisabledImage="@image/radio_check.png source(51,0,68,17)">
+</skin>
+	

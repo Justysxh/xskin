@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+
+<skin
+	bkImage="@image/list_bk.png"
+	vscroll:skin="@skin/VScrollBar.xml">
+</skin>
+	

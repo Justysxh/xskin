@@ -1,0 +1,5 @@
+#ifndef __SIZE_POLICY_H_INCLUDED__
+#define __SIZE_POLICY_H_INCLUDED__
+
+
+#endif //! __SIZE_POLICY_H_INCLUDED__

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<UICardLayout
+id="pager"
+width="expanding"
+height="expanding">
+
+<UIGridLayout
+id="main"
+width="expanding"
+height="expanding"
+padding="30,30,30,30"
+rowCount="6"
+columnCount="9"
+hgap="10"
+vgap="10"
+bkImage="#0d0d0d">
+
+<UIImageButton
+id="btn_cxye"
+width="expanding"
+height="expanding"
+spacing="20"
+tabindex="1"
+layoutRow="0"
+layoutColumn="0"
+layoutRowSpan="3"
+layoutColumnSpan="2"
+layoutGravity="left|top"
+bkImage="#0072bb"
+bkHotImage="@bk_shadow.png"
+textColor="#FFFFFF"
+font="Microsoft YaHei,14,normal"
+icon="@testimg.bmp"
+text="查询余额"/>
+
+<UIImageButton
+id="btn_bhzz"
+width="expanding"
+height="expanding"
+spacing="20"
+tabindex="2"
+layoutRow="0"
+layoutColumn="2"
+layoutRowSpan="3"
+layoutColumnSpan="2"
+layoutGravity="left|top"
+bkImage="#008641"
+bkHotImage="@bk_shadow.png"
+textColor="#FFFFFF"
+font="Microsoft YaHei,14,normal"
+icon="@bhzz.png"
+text="本行转账"/>
+
+<UIImageButton
+id="btn_khzz"
+width="expanding"
+height="expanding"
+spacing="20"
+layoutRow="0"
+layoutColumn="4"
+layoutRowSpan="3"
+layoutColumnSpan="2"
+layoutGravity="left|top"
+bkImage="#5f3abb"
+bkHotImage="@bk_shadow.png"
+textColor="#FFFFFF"
+font="Microsoft YaHei,14,normal"
+icon="@khzz.png"
+text="跨行转账"/>
+
+<UIImageButton
+id="btn_kh"
+width="expanding"
+height="expanding"
+spacing="20"
+layoutRow="0"
+layoutColumn="6"
+layoutRowSpan="6"
+layoutColumnSpan="-1"
+layoutGravity="left|top"
+bkImage="#cd4900"
+bkHotImage="@bk_shadow.png"
+textColor="#FFFFFF"
+font="Microsoft YaHei,14,normal"
+icon="disk/10.jpg"
+text="开户"/>
+
+<UIImageButton
+id="btn_sf"
+width="expanding"
+height="expanding"
+spacing="20"
+layoutRow="3"
+layoutColumn="0"
+layoutRowSpan="3"
+layoutColumnSpan="2"
+layoutGravity="left|top"
+bkImage="#bd1c48"
+bkHotImage="@bk_shadow.png"
+textColor="#FFFFFF"
+font="Microsoft YaHei,14,normal"
+icon="@water.png"
+text="水费"/>
+
+<UIImageButton
+id="btn_df"
+width="expanding"
+height="expanding"
+spacing="20"
+layoutRow="3"
+layoutColumn="2"
+layoutRowSpan="3"
+layoutColumnSpan="2"
+layoutGravity="left|top"
+bkImage="#82bf26"
+bkHotImage="@bk_shadow.png"
+textColor="#FFFFFF"
+font="Microsoft YaHei,14,normal"
+icon="@thunder.png"
+text="电费"/>
+
+<UIImageButton
+id="btn_qf"
+width="expanding"
+height="expanding"
+spacing="20"
+layoutRow="3"
+layoutColumn="4"
+layoutRowSpan="3"
+layoutColumnSpan="2"
+layoutGravity="left|top"
+bkImage="#672d93"
+bkHotImage="@bk_shadow.png"
+textColor="#FFFFFF"
+font="Microsoft YaHei,14,normal"
+icon="@gas.png"
+text="气费"/>
+
+</UIGridLayout>
+
+<UIBoxLayout
+id="page_cxye"
+width="expanding"
+height="expanding"
+direction="horizontal"
+bkImage="@bk_shadow.png"
+gravity="hcenter|vcenter">
+    <UIEditView
+    id="input"
+    width="200"
+    height="preferred"
+    borderColor="#0000FF"
+    borderVisible="true"
+    placeHolder="input you password"
+    margin="0,0,20,0"/>
+
+    <UIButton
+    width="100"
+    height="45"
+    bkNormalImage="#00FF00"
+    bkHotImage="#00FFFF"
+    bkPushedImage="#FFFF00"
+    bkDisabledImage="#808080"
+    text="Enter"
+    textColor="#FFFFFF"
+    font="simsun,12,normal"
+    margin="0,0,30,0"/>
+
+    <UIButton
+    width="100"
+    height="45"
+    bkNormalImage="#00FF00"
+    bkHotImage="#00FFFF"
+    bkPushedImage="#FFFF00"
+    bkDisabledImage="#808080"
+    enabled="false"
+    text="Enter"
+    textColor="#FFFFFF"
+    font="simsun,12,normal"/>
+</UIBoxLayout>
+
+</UICardLayout>

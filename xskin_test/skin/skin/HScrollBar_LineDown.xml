@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+
+<skin
+	bkNormalImage="@image/scrollbar.png source(90,0,108,18)"
+	bkHotImage="@image/scrollbar.png source(90,18,108,36)"
+	bkPushedImage="@image/scrollbar.png source(90,36,108,54)">
+</skin>
+	

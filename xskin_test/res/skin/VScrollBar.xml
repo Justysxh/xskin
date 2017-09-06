@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+
+<skin
+	bkImage="@scrollbar.png source(54, 0, 72, 18)"
+	lineup:skin="@VScrollBar_LineUp.xml"
+	linedown:skin="@VScrollBar_LineDown.xml"
+	track:skin="@VScrollBar_Track.xml">
+</skin>
+	

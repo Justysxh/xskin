@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+
+<skin
+	bkNormalImage="@image/edit_bk.png source(0,0,20,26)"
+	bkHotImage="@image/edit_bk.png source(20,0,40,26)"
+	bkPushedImage="@image/edit_bk.png source(20,0,40,26)"
+	bkDisabledImage="@image/edit_bk.png source(40,0,60,26)">
+</skin>
+	

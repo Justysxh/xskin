@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+
+<skin
+	bkImage="@image/slider_bk.png"
+	bkFragmentImage="@image/slider_frg.png"
+	handle:skin="@skin/UISlider_Handle.xml">
+</skin>
+	

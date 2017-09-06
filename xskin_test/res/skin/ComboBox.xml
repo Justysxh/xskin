@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+
+<skin
+	bkNormalImage="@combobox_normal.png"
+	bkHotImage="@combobox_checked.png"
+	bkPushedImage="@combobox_checked.png"
+	bkCheckedImage="@combobox_checked.png"
+	bkDisabledImage="@combobox_disabled.png">
+</skin>
+	

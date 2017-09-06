@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+
+<skin
+	bkNormalImage="@image/combo_bk.png"
+	bkHotImage="@image/combo_check.png"
+	bkPushedImage="@image/combo_check.png"
+	bkCheckedImage="@image/combo_check.png"
+	bkDisabledImage="@image/combo_disable.png"
+	dropdown:skin="@skin/UIListView.xml">
+</skin>
+	

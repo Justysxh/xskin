@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+
+<skin
+	bkImage="@image/scrollbar.png source(126, 0, 144, 18)"
+	lineup:skin="@skin/HScrollBar_LineUp.xml"
+	linedown:skin="@skin/HScrollBar_LineDown.xml"
+	track:skin="@skin/HScrollBar_Track.xml">
+</skin>
+	

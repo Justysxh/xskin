@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{61D3F191-CEA2-4868-A5FA-20DCA5D61BC8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>xskin_dll</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>../zlib;$(IncludePath)</IncludePath>
+    <TargetName>xskin_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>../zlib;$(IncludePath)</IncludePath>
+    <TargetName>xskin</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DLL_EXPORT;_DEBUG;_WINDOWS;_USRDLL;XSKIN_DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>../Debug/unzip.lib;../Debug/tinyxml2.lib;../Debug/libpng.lib;../Debug/libjpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_DLL_EXPORT;NDEBUG;_WINDOWS;_USRDLL;XSKIN_DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>../Release/unzip.lib;../Release/tinyxml2.lib;../Release/libpng.lib;../Release/libjpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\xskin\include\animation\UIAlphaAnimation.h" />
+    <ClInclude Include="..\xskin\include\animation\UIAnimation.h" />
+    <ClInclude Include="..\xskin\include\animation\UIBoundAnimation.h" />
+    <ClInclude Include="..\xskin\include\animation\UIScaleAnimation.h" />
+    <ClInclude Include="..\xskin\include\animation\UITranslateAnimation.h" />
+    <ClInclude Include="..\xskin\include\core\AutoPtr.h" />
+    <ClInclude Include="..\xskin\include\core\Macros.h" />
+    <ClInclude Include="..\xskin\include\core\RefCounted.h" />
+    <ClInclude Include="..\xskin\include\core\UIApplication.h" />
+    <ClInclude Include="..\xskin\include\core\UIAsset.h" />
+    <ClInclude Include="..\xskin\include\core\UIMeasure.h" />
+    <ClInclude Include="..\xskin\include\core\UIObject.h" />
+    <ClInclude Include="..\xskin\include\core\UIPoint.h" />
+    <ClInclude Include="..\xskin\include\core\UIRect.h" />
+    <ClInclude Include="..\xskin\include\core\UIResponser.h" />
+    <ClInclude Include="..\xskin\include\core\UISize.h" />
+    <ClInclude Include="..\xskin\include\core\UIString.h" />
+    <ClInclude Include="..\xskin\include\event\UIActionEvent.h" />
+    <ClInclude Include="..\xskin\include\event\UIEvent.h" />
+    <ClInclude Include="..\xskin\include\event\UIFocusEvent.h" />
+    <ClInclude Include="..\xskin\include\event\UIKeyEvent.h" />
+    <ClInclude Include="..\xskin\include\event\UIMouseEvent.h" />
+    <ClInclude Include="..\xskin\include\event\UITimerEvent.h" />
+    <ClInclude Include="..\xskin\include\event\UIWheelEvent.h" />
+    <ClInclude Include="..\xskin\include\gfx\UIBitmap.h" />
+    <ClInclude Include="..\xskin\include\gfx\UIBrush.h" />
+    <ClInclude Include="..\xskin\include\gfx\UIDrawable.h" />
+    <ClInclude Include="..\xskin\include\gfx\UIFont.h" />
+    <ClInclude Include="..\xskin\include\gfx\UIPen.h" />
+    <ClInclude Include="..\xskin\include\gfx\UIRender.h" />
+    <ClInclude Include="..\xskin\include\model\UIModel.h" />
+    <ClInclude Include="..\xskin\include\view\UIBoxLayout.h" />
+    <ClInclude Include="..\xskin\include\view\UIButton.h" />
+    <ClInclude Include="..\xskin\include\view\UICardLayout.h" />
+    <ClInclude Include="..\xskin\include\view\UICheckBox.h" />
+    <ClInclude Include="..\xskin\include\view\UIComboBox.h" />
+    <ClInclude Include="..\xskin\include\view\UIControl.h" />
+    <ClInclude Include="..\xskin\include\view\UIEditView.h" />
+    <ClInclude Include="..\xskin\include\view\UIGridLayout.h" />
+    <ClInclude Include="..\xskin\include\view\UIHyperlink.h" />
+    <ClInclude Include="..\xskin\include\view\UIImageButton.h" />
+    <ClInclude Include="..\xskin\include\view\UIImageView.h" />
+    <ClInclude Include="..\xskin\include\view\UIListView.h" />
+    <ClInclude Include="..\xskin\include\view\UIPanel.h" />
+    <ClInclude Include="..\xskin\include\view\UIProgressBar.h" />
+    <ClInclude Include="..\xskin\include\view\UIRadioButton.h" />
+    <ClInclude Include="..\xskin\include\view\UIRootView.h" />
+    <ClInclude Include="..\xskin\include\view\UIScrollBar.h" />
+    <ClInclude Include="..\xskin\include\view\UIScrollView.h" />
+    <ClInclude Include="..\xskin\include\view\UISlider.h" />
+    <ClInclude Include="..\xskin\include\view\UITabBar.h" />
+    <ClInclude Include="..\xskin\include\view\UIListItem.h" />
+    <ClInclude Include="..\xskin\include\view\UITabItem.h" />
+    <ClInclude Include="..\xskin\include\view\UITextView.h" />
+    <ClInclude Include="..\xskin\include\view\UITreeView.h" />
+    <ClInclude Include="..\xskin\include\view\UIView.h" />
+    <ClInclude Include="..\xskin\include\view\UIWindow.h" />
+    <ClInclude Include="..\xskin\include\XSkin.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\xskin\src\animation\UIAlphaAnimation.cpp" />
+    <ClCompile Include="..\xskin\src\animation\UIAnimation.cpp" />
+    <ClCompile Include="..\xskin\src\animation\UIBoundAnimation.cpp" />
+    <ClCompile Include="..\xskin\src\animation\UIScaleAnimation.cpp" />
+    <ClCompile Include="..\xskin\src\animation\UITranslateAnimation.cpp" />
+    <ClCompile Include="..\xskin\src\core\UIApplication.cpp" />
+    <ClCompile Include="..\xskin\src\core\UIAsset.cpp" />
+    <ClCompile Include="..\xskin\src\core\UIObject.cpp" />
+    <ClCompile Include="..\xskin\src\core\UIResponser.cpp" />
+    <ClCompile Include="..\xskin\src\core\UIString.cpp" />
+    <ClCompile Include="..\xskin\src\event\UIActionEvent.cpp" />
+    <ClCompile Include="..\xskin\src\event\UIEvent.cpp" />
+    <ClCompile Include="..\xskin\src\event\UIFocusEvent.cpp" />
+    <ClCompile Include="..\xskin\src\event\UIKeyEvent.cpp" />
+    <ClCompile Include="..\xskin\src\event\UIMouseEvent.cpp" />
+    <ClCompile Include="..\xskin\src\event\UITimerEvent.cpp" />
+    <ClCompile Include="..\xskin\src\event\UIWheelEvent.cpp" />
+    <ClCompile Include="..\xskin\src\gfx\UIBitmap.cpp" />
+    <ClCompile Include="..\xskin\src\gfx\UIBrush.cpp" />
+    <ClCompile Include="..\xskin\src\gfx\UIDrawable.cpp" />
+    <ClCompile Include="..\xskin\src\gfx\UIFont.cpp" />
+    <ClCompile Include="..\xskin\src\gfx\UIPen.cpp" />
+    <ClCompile Include="..\xskin\src\gfx\UIRender.cpp" />
+    <ClCompile Include="..\xskin\src\model\UIModel.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIBoxLayout.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIButton.cpp" />
+    <ClCompile Include="..\xskin\src\view\UICardLayout.cpp" />
+    <ClCompile Include="..\xskin\src\view\UICheckBox.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIComboBox.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIControl.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIEditView.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIGridLayout.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIHyperlink.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIImageButton.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIImageView.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIListView.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIPanel.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIProgressBar.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIRadioButton.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIRootView.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIScrollBar.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIScrollView.cpp" />
+    <ClCompile Include="..\xskin\src\view\UISlider.cpp" />
+    <ClCompile Include="..\xskin\src\view\UITabBar.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIListItem.cpp" />
+    <ClCompile Include="..\xskin\src\view\UITabItem.cpp" />
+    <ClCompile Include="..\xskin\src\view\UITextView.cpp" />
+    <ClCompile Include="..\xskin\src\view\UITreeView.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIView.cpp" />
+    <ClCompile Include="..\xskin\src\view\UIWindow.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="xskin_dll.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

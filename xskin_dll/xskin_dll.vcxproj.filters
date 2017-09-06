@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\animation">
+      <UniqueIdentifier>{8a3338a4-c5ce-435d-8e32-0afa64d83a76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\core">
+      <UniqueIdentifier>{01ee4858-c235-4cf5-884e-03b7fb048eb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\event">
+      <UniqueIdentifier>{5bd5dba8-c889-4cf4-8b53-c5ba57120e8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\gfx">
+      <UniqueIdentifier>{56e37640-d94f-403f-867f-70bb1871d292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\view">
+      <UniqueIdentifier>{a226b347-10fd-4f0f-bdad-be00d74c08b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\animation">
+      <UniqueIdentifier>{ebcc9a60-5075-4cb7-8f02-fc7666311a90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\core">
+      <UniqueIdentifier>{bea5d90a-372b-40f1-9347-0454c345435f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\event">
+      <UniqueIdentifier>{1c0de03c-960e-4165-9cfe-db380878d580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\gfx">
+      <UniqueIdentifier>{2247e61b-de3c-460f-896e-c92ed11e9cc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\view">
+      <UniqueIdentifier>{9c22f472-9053-45c0-900a-705b1e3f0309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\model">
+      <UniqueIdentifier>{ff83d471-ed8d-4e71-927c-b1160e3a5ae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\model">
+      <UniqueIdentifier>{7ffe0cfe-395f-4b10-bf2b-d81d4d30bd93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\animation\UIAlphaAnimation.h">
+      <Filter>头文件\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\animation\UIAnimation.h">
+      <Filter>头文件\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\animation\UIBoundAnimation.h">
+      <Filter>头文件\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\core\AutoPtr.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\core\RefCounted.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\core\UIApplication.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\core\UIAsset.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\core\UIMeasure.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\core\UIObject.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\core\UIPoint.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\core\UIRect.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\core\UIResponser.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\core\UISize.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\core\UIString.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\event\UIActionEvent.h">
+      <Filter>头文件\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\event\UIEvent.h">
+      <Filter>头文件\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\event\UIFocusEvent.h">
+      <Filter>头文件\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\event\UIKeyEvent.h">
+      <Filter>头文件\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\event\UIMouseEvent.h">
+      <Filter>头文件\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\event\UITimerEvent.h">
+      <Filter>头文件\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\event\UIWheelEvent.h">
+      <Filter>头文件\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\gfx\UIBitmap.h">
+      <Filter>头文件\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\gfx\UIBrush.h">
+      <Filter>头文件\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\gfx\UIDrawable.h">
+      <Filter>头文件\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\gfx\UIFont.h">
+      <Filter>头文件\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\gfx\UIPen.h">
+      <Filter>头文件\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\gfx\UIRender.h">
+      <Filter>头文件\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIBoxLayout.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIButton.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UICardLayout.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UICheckBox.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIComboBox.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIControl.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIEditView.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIGridLayout.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIHyperlink.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIImageButton.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIListView.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIPanel.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIProgressBar.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIRadioButton.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIRootView.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIScrollBar.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIScrollView.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UISlider.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UITabBar.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UITextView.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UITreeView.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIView.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIWindow.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\animation\UITranslateAnimation.h">
+      <Filter>头文件\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\XSkin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\core\Macros.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIImageView.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\animation\UIScaleAnimation.h">
+      <Filter>头文件\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\model\UIModel.h">
+      <Filter>头文件\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UIListItem.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xskin\include\view\UITabItem.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xskin_dll.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\animation\UIAlphaAnimation.cpp">
+      <Filter>源文件\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\animation\UIAnimation.cpp">
+      <Filter>源文件\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\animation\UIBoundAnimation.cpp">
+      <Filter>源文件\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\core\UIApplication.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\core\UIAsset.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\core\UIObject.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\core\UIResponser.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\core\UIString.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\event\UIActionEvent.cpp">
+      <Filter>源文件\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\event\UIEvent.cpp">
+      <Filter>源文件\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\event\UIFocusEvent.cpp">
+      <Filter>源文件\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\event\UIKeyEvent.cpp">
+      <Filter>源文件\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\event\UIMouseEvent.cpp">
+      <Filter>源文件\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\event\UITimerEvent.cpp">
+      <Filter>源文件\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\event\UIWheelEvent.cpp">
+      <Filter>源文件\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\gfx\UIBitmap.cpp">
+      <Filter>源文件\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\gfx\UIBrush.cpp">
+      <Filter>源文件\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\gfx\UIDrawable.cpp">
+      <Filter>源文件\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\gfx\UIFont.cpp">
+      <Filter>源文件\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\gfx\UIPen.cpp">
+      <Filter>源文件\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\gfx\UIRender.cpp">
+      <Filter>源文件\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIView.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIWindow.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIScrollBar.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UITreeView.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIRootView.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIEditView.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIScrollView.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIGridLayout.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIBoxLayout.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UISlider.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIRadioButton.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIControl.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIComboBox.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIImageButton.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UICardLayout.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIListView.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIButton.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UITabBar.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UITextView.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIPanel.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIHyperlink.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UICheckBox.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIProgressBar.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\animation\UITranslateAnimation.cpp">
+      <Filter>源文件\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIImageView.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\animation\UIScaleAnimation.cpp">
+      <Filter>源文件\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\model\UIModel.cpp">
+      <Filter>源文件\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UIListItem.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xskin\src\view\UITabItem.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
